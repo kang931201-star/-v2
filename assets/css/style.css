@@ -498,7 +498,7 @@ img[hidden] {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../images/kv2.jpg");
+  background-image: url("../images/kv2.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -676,7 +676,7 @@ img[hidden] {
   }
 
   .hero::before {
-    background-image: url("../images/KV_m.jpg");
+    background-image: url("../images/KV_m.webp");
   }
 
   .hero__inner {
