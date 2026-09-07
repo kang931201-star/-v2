@@ -4,27 +4,70 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>카카오뱅크와 함께하는 발로란트 랭킹전</title>
+<meta name="description" content="최대 100만 마일리지 & RAZER 게이밍 기어 풀세트를 받아가세요! 카카오뱅크와 함께하는 발로란트 랭킹전에 지금 참여하세요.">
+<meta name="keywords" content="카카오뱅크,발로란트,크래프트박스,피카플레이,랭킹전,이벤트,마일리지">
+<meta name="author" content="카카오뱅크 × VALORANT">
+<meta name="theme-color" content="#ffe300">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="카카오뱅크 × 크래프트박스">
+<meta property="og:title" content="카카오뱅크와 함께하는 발로란트 랭킹전">
+<meta property="og:description" content="최대 100만 마일리지 & RAZER 게이밍 기어 풀세트를 받아가세요! 카카오뱅크와 함께하는 발로란트 랭킹전에 지금 참여하세요.">
+<meta property="og:url" content="https://ics.mediaweb.co.kr/_event/20261001_CBLvalorant/index.html" />
+<meta property="og:image" content="https://ics.mediaweb.co.kr/_event/20261001_CBLvalorant/assets/images/Thumbnail_800x400.jpg">
+<meta property="og:image:alt" content="카카오뱅크 × 발로란트 랭킹전">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="카카오뱅크와 함께하는 발로란트 랭킹전">
+<meta name="twitter:description" content="최대 100만 마일리지 & RAZER 게이밍 기어 풀세트를 받아가세요! 카카오뱅크와 함께하는 발로란트 랭킹전에 지금 참여하세요.">
+<meta name="twitter:url" content="https://ics.mediaweb.co.kr/_event/20261001_CBLvalorant/index.html" />
+<meta name="twitter:image" content="https://ics.mediaweb.co.kr/_event/20261001_CBLvalorant/assets/images/Thumbnail_1200x630.jpg">
+<meta name="twitter:image:alt" content="카카오뱅크 × 발로란트 랭킹전">
+
 <link rel="preload" href="assets/fonts/Paperlogy-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Paperlogy-Bold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/images/kv2.jpg" as="image" fetchpriority="high">
+<link rel="preload" href="assets/images/kv2.jpg" as="image" fetchpriority="high" media="(min-width: 901px)">
+<link rel="preload" href="assets/images/KV_m.jpg" as="image" fetchpriority="high" media="(max-width: 900px)">
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<header class="cb-header" id="cb-top">
+  <div class="cb-header__inner">
+    <div class="cb-header__notice-wrap">
+      <button class="toggle-btn" type="button" id="pcRoomToggle" data-state="off" aria-label="PC방 모드 토글">
+        <img class="toggle-btn__img" src="assets/images/off=off.png" alt="PC방 모드 OFF" loading="lazy">
+      </button>
+      <p class="cb-header__notice">
+        본 이벤트는 <a href="https://picaplay.com/pcbang/main.do" target="_blank" rel="noopener noreferrer"><u>피카플레이 가맹 PC방</u></a> 또는 <b>개인PC에서</b> <a href="https://www.craftbox.co.kr/" target="_blank" rel="noopener noreferrer"><u>크래프트박스 설치</u></a> 후 참여 가능합니다.
+      </p>
+    </div>
+    <button class="btn-share" type="button" id="btnShare" aria-label="공유하기">
+      <img src="assets/images/share_icon.svg" alt="share icon">
+      <span>공유하기</span>
+    </button>
+  </div>
+</header>
 <section class="hero" id="top">
   <div class="container hero__inner">
     <div class="hero__content">
-      <div class="hero__logos">
-        <img class="hero__logo hero__logo--kakaobank" src="assets/images/logo-kakaobank.png" alt="카카오뱅크">
-        <img class="hero__logo-sep" src="assets/images/logo-sep-1.svg" alt="">
-        <img class="hero__logo hero__logo--valorant" src="assets/images/logo-valorant.svg" alt="발로란트">
-        <img class="hero__logo-sep" src="assets/images/logo-sep-2.svg" alt="">
-        <img class="hero__logo hero__logo--craftbox" src="assets/images/logo-craftbox.png" alt="크래프트박스">
+      <div class="hero__content-top">
+        <div class="hero__logos">
+          <img class="hero__logo hero__logo--kakaobank" src="assets/images/logo-kakaobank.png" alt="카카오뱅크">
+          <img class="hero__logo-sep" src="assets/images/logo-sep-1.svg" alt="">
+          <img class="hero__logo hero__logo--valorant" src="assets/images/logo-valorant.svg" alt="발로란트">
+          <img class="hero__logo-sep" src="assets/images/logo-sep-2.svg" alt="">
+          <img class="hero__logo hero__logo--craftbox" src="assets/images/logo-craftbox.png" alt="크래프트박스">
+        </div>
+        <img class="hero__title-img" src="assets/images/title.png" alt="CBL · VALORANT OPEN 카카오뱅크와 함께하는 발로란트 랭킹전" width="763" height="292">
+        <p class="hero__subtitle">최대 <strong class="hero__subtitle-accent">100만 마일리지</strong> &amp;<br class="hero__subtitle-break"> RAZER 게이밍 기어 풀세트 받자!</p>
       </div>
-      <img class="hero__title-img" src="assets/images/title.png" alt="CBL · VALORANT OPEN 카카오뱅크와 함께하는 발로란트 랭킹전" width="763" height="292">
-      <p class="hero__subtitle">최대 <strong class="hero__subtitle-accent">100만 마일리지</strong> &amp; RAZER 게이밍 기어 풀세트 받자!</p>
-      <a href="#participate" class="hero__cta">지금 참여하기</a>
-      <p class="hero__period">2026.10.01 – 11.30</p>
+      <div class="hero__content-bottom">
+        <a href="#howto" class="hero__cta">지금 참여하기</a>
+        <p class="hero__period">2026.10.01 – 11.30</p>
+      </div>
     </div>
   </div>
 </section>
@@ -90,8 +133,10 @@
           행운의 랭킹 달성 시<br class="lucky-banner__break">
           <strong>각 50,000 마일리지 추가 지급!</strong>
         </p>
-        <span class="lucky-banner__pill">77위</span>
-        <span class="lucky-banner__pill">777위</span>
+        <div class="lucky-banner__pills">
+          <span class="lucky-banner__pill">77위</span>
+          <span class="lucky-banner__pill">777위</span>
+        </div>
         <img class="lucky-banner__icon" src="assets/images/s02-lucky-tag.png" alt="50,000 마일리지">
       </div>
 
@@ -231,6 +276,8 @@
     <div class="mini-card-issue__body">
       <div class="mini-card-stack">
         <img class="mini-card-stack__img" src="assets/images/s04b-cards.png" alt="카카오뱅크 mini 카드 (핑크, 민트, 그레이)" width="594" height="375" loading="lazy">
+        <p class="mini-card-issue__note-strong">추첨 100명 · 20,000 마일리지</p>
+        <p class="mini-card-issue__note">※ 만 14세 미만은 법정대리인 동의가 필요합니다.</p>
       </div>
 
       <div class="mini-card-issue__panel">
@@ -246,15 +293,37 @@
           </li>
           <li>
             <span class="mini-step-list__badge">STEP 03</span>
-            <span class="mini-step-list__label">인증 등록하기 <em>(새 창)</em></span>
+            <span class="mini-step-list__label">인증 등록하기</span>
           </li>
         </ul>
 
-        <button type="button" class="mini-card-issue__cta" data-modal-open="cert-modal">인증 등록하기 →</button>
-
-        <p class="mini-card-issue__note-strong">추첨 100명 · 20,000 마일리지</p>
-        <p class="mini-card-issue__note">※ 만 14세 미만은 법정대리인 동의가 필요합니다.</p>
+        <div class="mini-card-issue__actions">
+          <button type="button" class="mini-card-issue__cta" data-modal-open="cert-modal">인증 등록하기 →</button>
+          <a href="https://www.kakaobank.com/products/mini" target="_blank" rel="noopener noreferrer" class="mini-card-issue__cta mini-card-issue__cta--outline">mini 알아보기</a>
+        </div>
       </div>
+    </div>
+
+    <h3 class="section-subtitle">mini카드 발급 방법</h3>
+
+    <div class="step-grid">
+      <article class="step-card">
+        <span class="badge step-card__badge">STEP 01</span>
+        <img class="phone-mock-img" src="assets/images/mini_step1.png" alt="카카오뱅크 앱 접속 화면" width="259" height="275" loading="lazy">
+        <p class="step-card__caption">카카오뱅크 앱 접속</p>
+      </article>
+
+      <article class="step-card">
+        <span class="badge step-card__badge">STEP 02</span>
+        <img class="phone-mock-img" src="assets/images/mini_step2.png" alt="전체메뉴 > 청소년 > 카카오뱅크 mini 화면" width="230" height="266" loading="lazy">
+        <p class="step-card__caption">전체메뉴 &gt; 청소년 &gt; 카카오뱅크 mini</p>
+      </article>
+
+      <article class="step-card">
+        <span class="badge step-card__badge">STEP 03</span>
+        <img class="phone-mock-img" src="assets/images/mini_step3.png" alt="mini랑 카드 만들기 화면" width="214" height="250" loading="lazy">
+        <p class="step-card__caption">mini랑 카드 만들기 선택</p>
+      </article>
     </div>
 
     <img class="mini-card-issue__mascot" src="assets/images/s04b-mascot.png" alt="" aria-hidden="true" loading="lazy">
@@ -287,7 +356,7 @@
           <span class="badge">혜택 2</span>
           <p class="benefit-card__desc">
             피카PC방에서 피카페이 결제 시 카카오뱅크 카드(일반/mini)로<br>
-            <strong>누적 30,000원 이상</strong> 결제하면 선착순 2,000명에게 5,000 마일리지 지급!
+            <strong>누적 10,000원 이상</strong> 결제하면 추첨을 통해 2,000명에게 5,000 마일리지 지급!
           </p>
         </div>
         <img class="benefit-card__coupon" src="assets/images/coupon-10000-2.png" alt="5,000 마일리지 쿠폰" width="240" height="169" loading="lazy">
@@ -327,8 +396,6 @@
       </article>
 
     </div>
-
-    <p class="mission-note">※ 결제 데이터로 자동 판정 · 이벤트 종료 후 순차 지급. 선착순 소진 시 "마감"으로 표기됩니다.</p>
 
   </div>
 </section>
@@ -410,7 +477,6 @@
           <li>이미 mini 카드를 보유한 유저는 신규 발급 미션 대상이 아닙니다.</li>
           <li>피카페이 결제 미션은 피카PC방에서 카카오뱅크 카드로 결제한 내역을 기준으로 자동 판정되며, 결제 취소 건은 누적 금액에서 제외됩니다.</li>
           <li>누적 결제 미션은 결제 후 환불 및 취소된 건은 포함되지 않으며, 반복적인 결제 및 환불 · 취소의 경우에는 어뷰징으로 간주되어 이벤트 대상자에서 제외될 수 있습니다.</li>
-          <li>누적 결제 미션은 선착순 2,000명 소진 시 종료되며, 소진 시점은 페이지에 별도 안내됩니다.</li>
         </ul>
       </details>
       <details class="accordion__item">
@@ -440,7 +506,7 @@
         <p class="notice__footer-title">카카오뱅크 발로란트 랭킹전</p>
         <p class="notice__footer-date">2026.10.01 – 11.30 · 지금 바로 참여하세요</p>
       </div>
-      <a href="#top" class="notice__footer-cta">지금 참여하기 →</a>
+      <a href="#howto" class="notice__footer-cta">지금 참여하기 →</a>
     </div>
   </footer>
 </section>
@@ -451,132 +517,383 @@
     <button type="button" class="modal__close" data-modal-close aria-label="닫기">×</button>
 
     <h2 class="modal__title" id="cert-modal-title">mini 카드 발급 인증</h2>
-    <p class="modal__intro">
-      카드 발급 완료 화면을 캡처한 뒤 인증 페이지에서 이미지를 등록해 주세요.<br>
-      등록 내용 검수 후 추첨 대상에 포함됩니다.
-    </p>
-    <ul class="modal__notes">
-      <li>카드 번호 등 민감 정보는 가려서 등록해 주세요.</li>
-      <li>발급 일자와 카드 종류가 식별되지 않는 캡처는 무효 처리됩니다.</li>
-      <li>만 14세 미만은 법정대리인 동의가 필요합니다.</li>
-    </ul>
+    <div class="modal__guide" id="cert-modal-guide">
+    <p class="modal__intro">발급 완료 화면 캡처와 정보를 입력하면 이 팝업에서 바로 등록돼요.</p>
 
-    <ol class="modal__steps">
-      <li class="modal__step">
-        <span class="modal__step-badge">01</span>
-        <span class="modal__step-label">발급 완료<br>화면 캡처</span>
+    <ol class="modal__stepper">
+      <li class="modal__stepper-item">
+        <span class="modal__stepper-step">STEP 1</span>
+        <span class="modal__stepper-label">발급 캡처</span>
       </li>
-      <li class="modal__step">
-        <span class="modal__step-badge">02</span>
-        <span class="modal__step-label">응모 페이지에<br>이미지 등록</span>
+      <li class="modal__stepper-item">
+        <span class="modal__stepper-step">STEP 2</span>
+        <span class="modal__stepper-label">정보 입력</span>
       </li>
-      <li class="modal__step">
-        <span class="modal__step-badge">03</span>
-        <span class="modal__step-label">등록 완료<br>(검수 후 확정)</span>
+      <li class="modal__stepper-item">
+        <span class="modal__stepper-step">STEP 3</span>
+        <span class="modal__stepper-label">등록 완료</span>
       </li>
     </ol>
 
     <div class="modal__examples">
       <div class="modal__example">
-        <span class="modal__example-tag modal__example-tag--ok">O</span>
-        <div class="modal__example-frame"></div>
+        <div class="modal__example-frame modal__example-frame--ok">
+          <span class="modal__example-tag modal__example-tag--ok">O</span>
+          <img class="modal__example-shot" src="assets/images/end.png" alt="카카오뱅크 mini 카드 발급 완료 화면 예시" loading="lazy">
+        </div>
         <p class="modal__example-caption">유효 캡처 예시</p>
       </div>
       <div class="modal__example">
-        <span class="modal__example-tag modal__example-tag--no">X</span>
-        <div class="modal__example-frame"></div>
+        <div class="modal__example-frame">
+          <span class="modal__example-tag modal__example-tag--no">X</span>
+          <img class="modal__example-shot" src="assets/images/x.png" alt="카드 정보가 보이지 않는 비유효 캡처 예시" loading="lazy">
+        </div>
         <p class="modal__example-caption">비유효 캡처 예시</p>
       </div>
     </div>
 
-    <div class="modal__required">
-      <p class="modal__required-title">수집 필요 항목 (4가지 · 필수)</p>
-      <ul class="modal__required-list">
-        <li>① 발급 완료 화면 캡처 이미지</li>
-        <li>② 피카플레이 ID</li>
-        <li>③ 휴대폰 번호</li>
-        <li>④ 이름</li>
-      </ul>
+    <ul class="modal__notes">
+      <li>카드 번호 등 민감 정보는 가려서 등록해 주세요.</li>
+      <li>발급 일자·카드 종류가 식별되지 않으면 무효 처리됩니다.</li>
+      <li>개인 정보 오기입 건들은 무효 처리됩니다.</li>
+      <li><strong>인증 정보 수정 희망 시에는 정보 재차 등록 부탁드립니다.</strong></li>
+      <li>만 14세 미만은 법정대리인 동의가 필요합니다.</li>
+    </ul>
     </div>
 
-    <label class="modal__consent">
-      <input type="checkbox" id="cert-modal-consent">
-      <span>개인정보 수집·이용 동의 (필수) <a href="#" class="modal__consent-link">전문 보기</a></span>
-    </label>
+    <form class="modal__form" id="cert-modal-form" novalidate>
+      <div class="modal__field">
+        <label class="modal__upload" for="cert-modal-file">
+          <span class="modal__upload-thumb">
+            <img class="modal__upload-preview" id="cert-modal-preview" alt="발급 완료 화면 캡처 미리보기" hidden>
+            <span class="modal__upload-icon" id="cert-modal-upload-icon" aria-hidden="true">+</span>
+          </span>
+          <span class="modal__upload-text">
+            <span class="modal__label">발급 완료 화면 캡처 이미지 <span class="modal__required-mark">*</span></span>
+            <span class="modal__upload-sub" id="cert-modal-upload-placeholder">이미지를 선택해 주세요</span>
+          </span>
+        </label>
+        <input type="file" class="modal__file-input" id="cert-modal-file" accept=".jpg,.jpeg,.png,image/jpeg,image/png">
+        <p class="modal__field-hint">파일 형식: JPG, JPEG, PNG · 파일 용량: 3MB 이하</p>
+      </div>
 
-    <div class="modal__actions">
-      <button type="button" class="modal__btn modal__btn--ghost" data-modal-close>닫기</button>
-      <a href="#" class="modal__btn modal__btn--primary" id="cert-modal-go" target="_blank" rel="noopener">인증 페이지로 이동 →</a>
+      <div class="modal__field">
+        <label class="modal__label" for="cert-modal-pid">피카플레이 ID <span class="modal__required-mark">*</span></label>
+        <input type="text" class="modal__input" id="cert-modal-pid" name="pid" placeholder="피카플레이 ID를 입력해 주세요" autocomplete="off" required>
+      </div>
+
+      <div class="modal__field">
+        <label class="modal__label" for="cert-modal-name">이름 <span class="modal__required-mark">*</span></label>
+        <input type="text" class="modal__input" id="cert-modal-name" name="name" placeholder="이름을 입력해 주세요" autocomplete="name" required>
+      </div>
+
+      <div class="modal__field">
+        <label class="modal__label" for="cert-modal-phone">휴대폰 번호 <span class="modal__required-mark">*</span></label>
+        <input type="tel" class="modal__input" id="cert-modal-phone" name="phone" placeholder="숫자만 입력해 주세요" autocomplete="tel" required>
+      </div>
+
+      <p class="modal__field-error" id="cert-modal-error" hidden></p>
+
+      <label class="modal__consent">
+        <input type="checkbox" id="cert-modal-consent">
+        <span>개인정보 수집·이용 동의 (필수) <button type="button" class="modal__consent-link" data-modal-open="privacy-modal">전문 보기</button></span>
+      </label>
+
+      <div class="modal__actions">
+        <button type="button" class="modal__btn modal__btn--ghost" data-modal-close>닫기</button>
+        <button type="submit" class="modal__btn modal__btn--primary" id="cert-modal-submit">정보 저장하기</button>
+      </div>
+    </form>
+
+    <div class="modal__success" id="cert-modal-success" hidden>
+      <p class="modal__success-icon" aria-hidden="true">✓</p>
+      <p class="modal__success-title">등록이 완료되었습니다</p>
+      <p class="modal__success-desc">검수 후 추첨 대상에 포함되며,<br>결과는 별도 공지 없이 당첨자 발표로 대체됩니다.</p>
+      <button type="button" class="modal__btn modal__btn--primary" data-modal-close>확인</button>
     </div>
   </div>
 </div>
 
-<script src="assets/js/main.js"></script>
-
-<div class="modal" id="cert-modal" data-modal hidden>
+<div class="modal" id="privacy-modal" data-modal hidden>
   <div class="modal__backdrop" data-modal-close></div>
-  <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+  <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
     <button type="button" class="modal__close" data-modal-close aria-label="닫기">×</button>
 
-    <h2 class="modal__title" id="cert-modal-title">mini 카드 발급 인증</h2>
-    <p class="modal__intro">
-      카드 발급 완료 화면을 캡처한 뒤 인증 페이지에서 이미지를 등록해 주세요.<br>
-      등록 내용 검수 후 추첨 대상에 포함됩니다.
-    </p>
-    <ul class="modal__notes">
-      <li>카드 번호 등 민감 정보는 가려서 등록해 주세요.</li>
-      <li>발급 일자와 카드 종류가 식별되지 않는 캡처는 무효 처리됩니다.</li>
-      <li>만 14세 미만은 법정대리인 동의가 필요합니다.</li>
-    </ul>
+    <h2 class="modal__title" id="privacy-modal-title">개인정보 수집·이용 동의</h2>
 
-    <ol class="modal__steps">
-      <li class="modal__step">
-        <span class="modal__step-badge">01</span>
-        <span class="modal__step-label">발급 완료<br>화면 캡처</span>
-      </li>
-      <li class="modal__step">
-        <span class="modal__step-badge">02</span>
-        <span class="modal__step-label">응모 페이지에<br>이미지 등록</span>
-      </li>
-      <li class="modal__step">
-        <span class="modal__step-badge">03</span>
-        <span class="modal__step-label">등록 완료<br>(검수 후 확정)</span>
-      </li>
-    </ol>
-
-    <div class="modal__examples">
-      <div class="modal__example">
-        <span class="modal__example-tag modal__example-tag--ok">O</span>
-        <div class="modal__example-frame"></div>
-        <p class="modal__example-caption">유효 캡처 예시</p>
-      </div>
-      <div class="modal__example">
-        <span class="modal__example-tag modal__example-tag--no">X</span>
-        <div class="modal__example-frame"></div>
-        <p class="modal__example-caption">비유효 캡처 예시</p>
-      </div>
+    <div class="modal__policy">
+      <section class="modal__policy-section">
+        <h3>1. 수집 항목</h3>
+        <p>피카플레이 ID, 이름, 휴대폰 번호, 카드 발급 완료 화면 캡처 이미지</p>
+      </section>
+      <section class="modal__policy-section">
+        <h3>2. 수집 목적</h3>
+        <p>mini 카드 발급 인증 확인, 이벤트 추첨 및 경품 지급, 당첨자 안내</p>
+      </section>
+      <section class="modal__policy-section">
+        <h3>3. 보유 및 이용 기간</h3>
+        <p>수집일로부터 경품 지급 완료 후 6개월간 보관하며, 관계 법령에 따라 별도 보관이 필요한 경우 해당 기간까지 보관 후 파기합니다.</p>
+      </section>
+      <section class="modal__policy-section">
+        <h3>4. 동의 거부 권리 및 불이익 안내</h3>
+        <p>귀하는 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. 다만 동의를 거부할 경우 mini 카드 발급 인증 등록 및 이벤트 참여가 제한될 수 있습니다.</p>
+      </section>
     </div>
-
-    <div class="modal__required">
-      <p class="modal__required-title">수집 필요 항목 (4가지 · 필수)</p>
-      <ul class="modal__required-list">
-        <li>① 발급 완료 화면 캡처 이미지</li>
-        <li>② 피카플레이 ID</li>
-        <li>③ 휴대폰 번호</li>
-        <li>④ 이름</li>
-      </ul>
-    </div>
-
-    <label class="modal__consent">
-      <input type="checkbox" id="cert-modal-consent">
-      <span>개인정보 수집·이용 동의 (필수) <a href="#" class="modal__consent-link">전문 보기</a></span>
-    </label>
 
     <div class="modal__actions">
-      <button type="button" class="modal__btn modal__btn--ghost" data-modal-close>닫기</button>
-      <a href="#" class="modal__btn modal__btn--primary" id="cert-modal-go" target="_blank" rel="noopener">인증 페이지로 이동 →</a>
+      <button type="button" class="modal__btn modal__btn--primary" data-modal-close>확인</button>
     </div>
   </div>
 </div>
+
+<div id="shareModal" class="share-modal" role="dialog" aria-modal="true" aria-labelledby="shareModalTitle" aria-hidden="true">
+  <div class="share-modal__dialog" role="document">
+    <button type="button" class="share-modal__close" id="shareModalClose" aria-label="닫기">&times;</button>
+    <h2 id="shareModalTitle" class="share-modal__title">공유하기</h2>
+    <div class="share-modal__grid">
+      <button type="button" class="share-item share-item--kakao" data-share="kakao" aria-label="카카오톡으로 공유">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.48 3 2 6.58 2 11c0 2.83 1.86 5.32 4.66 6.73L5.5 21.5l4.2-2.47c.76.11 1.54.17 2.3.17 5.52 0 10-3.58 10-8S17.52 3 12 3z"/></svg>
+        </span>
+        <span class="share-item__label">카카오톡</span>
+      </button>
+      <button type="button" class="share-item share-item--facebook" data-share="facebook" aria-label="페이스북으로 공유">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5v3.1h2.6V21h3.4z"/></svg>
+        </span>
+        <span class="share-item__label">페이스북</span>
+      </button>
+      <button type="button" class="share-item share-item--twitter" data-share="twitter" aria-label="트위터(X)로 공유">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        </span>
+        <span class="share-item__label">트위터</span>
+      </button>
+      <button type="button" class="share-item share-item--naver" data-share="naver" aria-label="네이버 블로그로 공유">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.91 12.03 9.94 6H6v12h4.09v-6.03L14.06 18H18V6h-4.09z"/></svg>
+        </span>
+        <span class="share-item__label">네이버블로그</span>
+      </button>
+      <button type="button" class="share-item share-item--instagram" data-share="instagram" aria-label="인스타그램 공유용 URL 복사">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </span>
+        <span class="share-item__label">인스타그램</span>
+      </button>
+      <button type="button" class="share-item share-item--copy" data-share="copy" aria-label="URL 복사">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        </span>
+        <span class="share-item__label">URL 복사</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="copyToast" class="copy-toast" role="status" aria-live="polite">클립보드에 복사되었습니다.</div>
+<div class="mobile-fab" role="group" aria-label="모바일 플로팅 버튼">
+  <button class="mobile-fab__btn" type="button" id="btnShareFloating" aria-label="공유하기">
+    <img src="assets/images/share_icon.svg" alt="" aria-hidden="true" loading="lazy">
+  </button>
+  <button class="mobile-fab__btn mobile-fab__btn--top" type="button" id="btnScrollTop" aria-label="맨 위로">
+    <span aria-hidden="true">TOP</span>
+  </button>
+</div>
+
+<script>
+  function setPcRoomToggleState(isPcRoom) {
+    var toggleBtn = document.getElementById('pcRoomToggle');
+    if (!toggleBtn) { return; }
+    var toggleImg = toggleBtn.querySelector('.toggle-btn__img');
+    if (!toggleImg) { return; }
+    var isOn = Boolean(isPcRoom);
+    toggleBtn.dataset.state = isOn ? 'on' : 'off';
+    toggleImg.src = isOn ? 'assets/images/off=on.png' : 'assets/images/off=off.png';
+    toggleImg.alt = isOn ? 'PC방 모드 ON' : 'PC방 모드 OFF';
+  }
+  setPcRoomToggleState(false);
+
+  var SHARE_CONFIG = {
+    title: '카카오뱅크와 함께하는 발로란트 랭킹전',
+    description: '최대 100만 마일리지 & RAZER 게이밍 기어 풀세트를 받아가세요! 지금 바로 참여하세요.',
+    kakaoKey: 'd1c0c39f4dbac0062bf36527a3021357',
+    ogImage: 'https://ics.mediaweb.co.kr/_event/20261001_CBLvalorant/assets/images/Thumbnail_800x400.jpg'
+  };
+
+  var copyToast = document.getElementById('copyToast');
+  var copyToastTimer = null;
+  var DEFAULT_TOAST_MSG = '클립보드에 복사되었습니다.';
+  function showCopyToast(msg) {
+    if (!copyToast) { return; }
+    copyToast.textContent = msg || DEFAULT_TOAST_MSG;
+    copyToast.classList.add('is-visible');
+    if (copyToastTimer) { clearTimeout(copyToastTimer); }
+    copyToastTimer = setTimeout(function() {
+      copyToast.classList.remove('is-visible');
+    }, 2200);
+  }
+  function fallbackCopyText(text) {
+    var textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    var copied = false;
+    try {
+      copied = document.execCommand('copy');
+    } catch (e) {}
+    document.body.removeChild(textarea);
+    return copied;
+  }
+  function copyUrlWithToast(url, toastMsg) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(url).then(function() {
+        showCopyToast(toastMsg);
+      }).catch(function() {
+        if (fallbackCopyText(url)) { showCopyToast(toastMsg); }
+      });
+    } else if (fallbackCopyText(url)) {
+      showCopyToast(toastMsg);
+    }
+  }
+
+  (function initKakao() {
+    if (!window.Kakao || !SHARE_CONFIG.kakaoKey) { return; }
+    if (Kakao.isInitialized && Kakao.isInitialized()) { return; }
+    try { Kakao.init(SHARE_CONFIG.kakaoKey); } catch (e) {}
+  })();
+
+  var shareModal = document.getElementById('shareModal');
+  var shareModalClose = document.getElementById('shareModalClose');
+  var lastShareTrigger = null;
+  function openShareModal(trigger) {
+    if (!shareModal) { return; }
+    lastShareTrigger = trigger || null;
+    shareModal.classList.add('is-open');
+    shareModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    if (shareModalClose) { shareModalClose.focus(); }
+  }
+  function closeShareModal() {
+    if (!shareModal) { return; }
+    shareModal.classList.remove('is-open');
+    shareModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastShareTrigger && lastShareTrigger.focus) { lastShareTrigger.focus(); }
+  }
+  if (shareModal) {
+    shareModal.addEventListener('click', function(e) {
+      if (e.target === shareModal) { closeShareModal(); }
+    });
+  }
+  if (shareModalClose) {
+    shareModalClose.addEventListener('click', closeShareModal);
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && shareModal && shareModal.classList.contains('is-open')) {
+      closeShareModal();
+    }
+  });
+
+  function openPopup(url) {
+    var w = 600, h = 600;
+    var left = (window.screen.width  - w) / 2;
+    var top  = (window.screen.height - h) / 2;
+    window.open(url, '_blank', 'width=' + w + ',height=' + h + ',left=' + left + ',top=' + top + ',noopener');
+  }
+  function shareFacebook() {
+    var u = encodeURIComponent(window.location.href);
+    openPopup('https://www.facebook.com/sharer/sharer.php?u=' + u);
+  }
+  function shareTwitter() {
+    var u = encodeURIComponent(window.location.href);
+    var t = encodeURIComponent(SHARE_CONFIG.title);
+    openPopup('https://twitter.com/intent/tweet?url=' + u + '&text=' + t);
+  }
+  function shareNaver() {
+    var u = encodeURIComponent(window.location.href);
+    var t = encodeURIComponent(SHARE_CONFIG.title);
+    openPopup('https://share.naver.com/web/shareView?url=' + u + '&title=' + t);
+  }
+  function shareKakao() {
+    if (!window.Kakao || !Kakao.Share) { return; }
+    if (!Kakao.isInitialized || !Kakao.isInitialized()) { return; }
+    try {
+      Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: SHARE_CONFIG.title,
+          description: SHARE_CONFIG.description,
+          imageUrl: SHARE_CONFIG.ogImage,
+          link: {
+            mobileWebUrl: window.location.href,
+            webUrl: window.location.href
+          }
+        },
+        buttons: [{
+          title: '자세히 보기',
+          link: {
+            mobileWebUrl: window.location.href,
+            webUrl: window.location.href
+          }
+        }]
+      });
+    } catch (e) {}
+  }
+  function shareInstagram() {
+    copyUrlWithToast(window.location.href, 'URL이 복사되었습니다. 인스타그램에 붙여넣어 주세요.');
+  }
+  function shareCopy() {
+    copyUrlWithToast(window.location.href, '클립보드에 복사되었습니다.');
+  }
+  var SHARE_HANDLERS = {
+    kakao:     shareKakao,
+    facebook:  shareFacebook,
+    twitter:   shareTwitter,
+    naver:     shareNaver,
+    instagram: shareInstagram,
+    copy:      shareCopy
+  };
+  if (shareModal) {
+    shareModal.addEventListener('click', function(e) {
+      var target = e.target.closest ? e.target.closest('[data-share]') : null;
+      if (!target) { return; }
+      var type = target.getAttribute('data-share');
+      var handler = SHARE_HANDLERS[type];
+      if (typeof handler === 'function') {
+        handler();
+        closeShareModal();
+      }
+    });
+  }
+
+  var btnShare = document.getElementById('btnShare');
+  if (btnShare) {
+    btnShare.addEventListener('click', function() { openShareModal(btnShare); });
+  }
+  var btnShareFloating = document.getElementById('btnShareFloating');
+  if (btnShareFloating) {
+    btnShareFloating.addEventListener('click', function() { openShareModal(btnShareFloating); });
+  }
+  var btnScrollTop = document.getElementById('btnScrollTop');
+  if (btnScrollTop) {
+    btnScrollTop.addEventListener('click', function (e) {
+      e.preventDefault();
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var behavior = reduce ? 'auto' : 'smooth';
+      try {
+        window.scrollTo({ top: 0, left: 0, behavior: behavior });
+      } catch (err) {
+        (document.scrollingElement || document.documentElement).scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+    });
+  }
+</script>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
