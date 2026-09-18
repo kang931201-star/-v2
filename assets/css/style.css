@@ -127,12 +127,29 @@ img[hidden] {
    tag, Step cards, etc.) and stays here on purpose.
    ============================================================ */
 .mission-title {
-  margin: 0 0 var(--space-6);
+  margin: 0 0 var(--space-2);
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(22px, 4vw, 40px);
   line-height: 1.3;
   color: var(--color-heading);
+  text-align: center;
+}
+
+.mission-subtitle {
+  margin: 0 0 var(--space-2);
+  color: #4a4a4a;
+  font-size: 16px;
+  font-family: var(--font-display);
+  text-align: center;
+}
+
+.mission-period {
+  margin: 0 0 var(--space-6);
+  color: var(--color-badge-bg);
+  font-weight: 700;
+  font-size: 15px;
+  font-family: var(--font-display);
   text-align: center;
 }
 
@@ -1328,9 +1345,17 @@ img[hidden] {
 }
 
 .double-mission__subtitle {
-  margin: 0 0 var(--space-6);
+  margin: 0 0 var(--space-2);
   color: #a6bad3;
   font-size: 18px;
+  font-family: var(--font-display);
+}
+
+.double-mission__period {
+  margin: 0 0 var(--space-6);
+  color: #ffe300;
+  font-weight: 700;
+  font-size: 15px;
   font-family: var(--font-display);
 }
 
@@ -1539,7 +1564,7 @@ img[hidden] {
 }
 
 .mini-card-issue__title {
-  margin: var(--space-2) 0 var(--space-6);
+  margin: var(--space-2) 0 var(--space-2);
   text-align: center;
   font-family: var(--font-display);
   font-weight: 700;
@@ -1551,6 +1576,15 @@ img[hidden] {
 .mini-card-issue__accent {
   font-weight: 800;
   color: #fff59b;
+}
+
+.mini-card-issue__period {
+  margin: 0 0 var(--space-6);
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
 }
 
 .mini-card-issue__body {
@@ -1998,6 +2032,18 @@ img[hidden] {
   color: #666;
 }
 
+.accordion__subheading {
+  margin: var(--space-2) 0 0;
+  padding-left: 1.4em;
+  color: #ffe300;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.accordion__summary + .accordion__subheading {
+  margin-top: 0;
+}
+
 .accordion__sublist {
   list-style: none;
   margin: var(--space-1) 0 0;
@@ -2108,10 +2154,21 @@ img[hidden] {
    Triggered from the mini-card-issue__cta button (04b section).
    Entire flow (capture upload + info + save) completes in-modal.
    ============================================================ */
+/* Some mobile browsers (notably iOS Safari) render a `position: sticky`
+   or `position: fixed` element above other fixed-position layers even
+   when its z-index is lower, ignoring normal stacking order. Hiding the
+   header / floating buttons outright while any modal is open sidesteps
+   that bug so popups are never covered. */
+body.has-open-modal .cb-header,
+body.has-open-modal .mobile-fab,
+body.has-open-modal .side-nav {
+  display: none !important;
+}
+
 .modal {
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: 2200;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2136,8 +2193,26 @@ img[hidden] {
   background: var(--color-badge-bg);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-card);
-  padding: var(--space-4);
   color: var(--color-white);
+}
+
+/* Sticky title bar: pinned to the top of the scrolling dialog so the
+   close button and title stay visible no matter how far the user has
+   scrolled through the popup's content. .modal__dialog itself carries
+   no padding any more — this bar and .modal__body each own their own,
+   so the bar can sit flush at the dialog's top edge (and corners)
+   without fighting the dialog's padding inside a scroll container. */
+.modal__header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  padding: var(--space-4) var(--space-4) var(--space-2);
+  background: var(--color-badge-bg);
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+}
+
+.modal__body {
+  padding: 0 var(--space-4) var(--space-4);
 }
 
 .modal__close {
@@ -2161,7 +2236,8 @@ img[hidden] {
 }
 
 .modal__title {
-  margin: 0 0 4px;
+  margin: 0;
+  padding-right: var(--space-4);
   font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(19px, 2.6vw, 22px);
@@ -2481,8 +2557,8 @@ img[hidden] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
-  border-radius: var(--radius-pill);
+  height: 56px;
+  border-radius: 999px;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 15px;
@@ -2565,6 +2641,14 @@ img[hidden] {
 
   .modal__actions {
     flex-direction: column;
+  }
+
+  .modal__btn {
+    /* In a column flex container, `flex: 1`'s flex-basis:0 would win over
+       the explicit height above and collapse the button to its text's
+       intrinsic height. Switch to a fixed-size item so height holds. */
+    flex: none;
+    width: 100%;
   }
 }
 

@@ -97,6 +97,7 @@
   function openModal(modal) {
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
+    document.body.classList.add('has-open-modal');
     activeModal = modal;
   }
 
@@ -104,6 +105,7 @@
     modal.hidden = true;
     var stillOpen = document.querySelector('[data-modal]:not([hidden])');
     document.body.style.overflow = stillOpen ? 'hidden' : '';
+    document.body.classList.toggle('has-open-modal', Boolean(stillOpen));
     activeModal = stillOpen || null;
   }
 
