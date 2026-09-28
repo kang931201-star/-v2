@@ -109,10 +109,18 @@
     activeModal = stillOpen || null;
   }
 
+  var lightboxImg = document.getElementById('example-lightbox-img');
+
   openers.forEach(function (opener) {
     opener.addEventListener('click', function () {
       var modal = document.getElementById(opener.getAttribute('data-modal-open'));
-      if (modal) openModal(modal);
+      if (!modal) return;
+      var lightboxSrc = opener.getAttribute('data-lightbox-src');
+      if (lightboxSrc && lightboxImg) {
+        lightboxImg.src = lightboxSrc;
+        lightboxImg.alt = opener.getAttribute('data-lightbox-alt') || '';
+      }
+      openModal(modal);
     });
   });
 
