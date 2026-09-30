@@ -2061,6 +2061,16 @@ img[hidden] {
   text-decoration: underline;
 }
 
+.notice__compliance {
+  margin: var(--space-4) 0 clamp(32px, 6vw, 60px);
+  padding-top: var(--space-3);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #9a9fa8;
+  font-size: 13.5px;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .notice__footer {
   background: #fee500;
   padding-block: var(--space-4);
